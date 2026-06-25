@@ -1,0 +1,319 @@
+@import './fonts.css';
+
+/* ============================================================
+   GLOBAL RESET & BOX SIZING
+   ============================================================ */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow-x: hidden;
+  max-width: 100vw;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--sans);
+  color: var(--text-dark);
+  background-color: var(--bg-light);
+  overflow-x: hidden;
+  max-width: 100vw;
+  width: 100%;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* All elements: never exceed viewport */
+section,
+div,
+header,
+footer,
+main,
+article,
+nav {
+  max-width: 100vw;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+video {
+  max-width: 100%;
+}
+
+button {
+  font-family: var(--sans);
+}
+
+/* ============================================================
+   CSS CUSTOM PROPERTIES
+   ============================================================ */
+:root {
+  --primary-pink: #DE5D83;
+  --primary-pink-hover: #c4476a;
+  --pastel-pink: #FFD5E5;
+  --pastel-blue: #D6E5FA;
+  --cream-white: #FFF9F2;
+  --pastel-lavender: #E8DBFC;
+  --warm-beige: #F5EBE6;
+  --star-gold: #F4B41A;
+
+  --text-dark: #3D332A;
+  --text-muted: #7A6F65;
+  --bg-light: #FFFBF7;
+  --border-light: rgba(222, 93, 131, 0.15);
+
+  --sans:  'Outfit', system-ui, -apple-system, sans-serif;
+  --serif: 'Playfair Display', Georgia, serif;
+
+  --shadow-sm: 0 4px 6px -1px rgba(61, 51, 42, 0.05);
+  --shadow-md: 0 10px 15px -3px rgba(61, 51, 42, 0.08), 0 4px 6px -2px rgba(61, 51, 42, 0.04);
+  --shadow-lg: 0 20px 25px -5px rgba(61, 51, 42, 0.1), 0 10px 10px -5px rgba(61, 51, 42, 0.04);
+  --shadow-glow: 0 0 15px rgba(222, 93, 131, 0.25);
+}
+
+/* ============================================================
+   TYPOGRAPHY UTILITIES
+   ============================================================ */
+.heading-serif { font-family: var(--serif); font-weight: 700; }
+.heading-sans  { font-family: var(--sans);  font-weight: 600; }
+.font-cursive     { font-family: 'Dancing Script', cursive; }
+.font-calligraphy { font-family: 'Great Vibes', cursive; }
+
+/* ============================================================
+   GLASSMORPHISM
+   ============================================================ */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: var(--shadow-md);
+}
+
+/* ============================================================
+   SCROLLBAR
+   ============================================================ */
+::-webkit-scrollbar       { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-light); }
+::-webkit-scrollbar-thumb { background: var(--pastel-pink); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--primary-pink); }
+
+/* ============================================================
+   KEYFRAME ANIMATIONS
+   ============================================================ */
+@keyframes kenBurns {
+  0%   { transform: scale(1)    translate(0, 0); }
+  50%  { transform: scale(1.08) translate(-1%, -0.5%); }
+  100% { transform: scale(1)    translate(0, 0); }
+}
+.ken-burns { animation: kenBurns 20s ease infinite; }
+
+@keyframes pulseGlow {
+  0%   { box-shadow: 0 0 0 0   rgba(222, 93, 131, 0.4); }
+  70%  { box-shadow: 0 0 0 10px rgba(222, 93, 131, 0); }
+  100% { box-shadow: 0 0 0 0   rgba(222, 93, 131, 0); }
+}
+.pulse-btn { animation: pulseGlow 2s infinite; }
+
+/* ============================================================
+   UTILITY CLASSES
+   ============================================================ */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* ============================================================
+   PAGE HERO SECTION — inner pages
+   ============================================================ */
+.page-hero-section {
+  position: relative;
+  overflow: hidden;
+  padding: 140px 24px 70px;
+  text-align: center;
+}
+
+/* ============================================================
+   RESPONSIVE GRID HELPERS
+   (set via className + @media, never broken by JS inline styles)
+   ============================================================ */
+.md-grid-2 { display: grid; grid-template-columns: 1fr; gap: 28px; }
+.md-grid-3 { display: grid; grid-template-columns: 1fr; gap: 22px; }
+.photo-trio { display: grid; grid-template-columns: 1fr; gap: 16px; }
+.stats-4    { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.gallery-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+
+/* ============================================================
+   MASCOTS — hide on small phones to save vertical space
+   ============================================================ */
+.page-mascot { display: block; }
+
+/* ============================================================
+   FOOTER GRID
+   ============================================================ */
+.footer-grid { display: grid; grid-template-columns: 1fr; gap: 36px; }
+
+/* ============================================================
+   BANNER BADGES (full-width hero image strip)
+   ============================================================ */
+.banner-badges {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* ============================================================
+   FEATURED QUOTE (Testimonials)
+   ============================================================ */
+.featured-quote-grid { display: grid; grid-template-columns: 1fr; }
+
+/* ============================================================
+   STATS grids
+   ============================================================ */
+.stats-3-mob { display: grid; grid-template-columns: 1fr; gap: 16px; }
+
+/* ============================================================
+   TABLET  ≥ 640px
+   ============================================================ */
+@media (min-width: 640px) {
+  .page-hero-section { padding: 150px 32px 80px; }
+  .gallery-grid  { grid-template-columns: repeat(3, 1fr) !important; }
+  .stats-3-mob   { grid-template-columns: repeat(3, 1fr) !important; }
+  .banner-badges { flex-wrap: nowrap; }
+}
+
+/* ============================================================
+   DESKTOP  ≥ 768px
+   ============================================================ */
+@media (min-width: 768px) {
+  .md-grid-2          { grid-template-columns: repeat(2, 1fr) !important; }
+  .md-grid-3          { grid-template-columns: repeat(3, 1fr) !important; }
+  .photo-trio         { grid-template-columns: repeat(3, 1fr) !important; }
+  .featured-quote-grid { grid-template-columns: 1fr 1fr !important; }
+  .footer-grid        { grid-template-columns: 1.5fr 1fr 1.2fr !important; }
+}
+
+/* ============================================================
+   LARGE DESKTOP  ≥ 1024px
+   ============================================================ */
+@media (min-width: 1024px) {
+  .stats-4      { grid-template-columns: repeat(4, 1fr) !important; }
+  .gallery-grid { grid-template-columns: repeat(4, 1fr) !important; }
+
+  /* Navbar: show desktop nav, hide hamburger */
+  .lg-flex-nav { display: flex !important; }
+  .lg-flex-cta { display: block !important; }
+  .lg-hidden   { display: none !important; }
+}
+
+/* ============================================================
+   SMALL PHONES  ≤ 480px — aggressive mobile fixes
+   ============================================================ */
+@media (max-width: 480px) {
+  /* Hero sections */
+  .page-hero-section { padding: 110px 16px 50px !important; }
+
+  /* Mascots hidden on very small phones */
+  .page-mascot { display: none !important; }
+
+  /* Typography — prevent any heading from overflowing */
+  h1 { font-size: clamp(22px, 8vw, 36px) !important; line-height: 1.2 !important; }
+  h2 { font-size: clamp(19px, 6.5vw, 28px) !important; }
+  h3 { font-size: clamp(17px, 5.5vw, 24px) !important; }
+  h4 { font-size: clamp(14px, 4.5vw, 18px) !important; }
+
+  /* Full-width banners: reduce height */
+  .banner-img { height: 240px !important; }
+
+  /* Banner badge strip: stack vertically */
+  .banner-badges { flex-direction: column !important; gap: 8px !important; padding: 12px 16px !important; }
+
+  /* Footer bottom row */
+  .flex-wrap-mobile-footer { flex-direction: column !important; gap: 10px !important; text-align: center !important; }
+
+  /* Stats: 2-col is fine for 4-stat grids, leave as-is */
+
+  /* Gallery: 2-col on small phones */
+  .gallery-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 10px !important; }
+
+  /* Reduce section horizontal padding */
+  [style*="padding: '60px 24px'"],
+  [style*='padding: "60px 24px"'] {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  /* Force no horizontal overflow on any element */
+  .overflow-safe {
+    overflow-x: hidden !important;
+  }
+}
+
+@media (max-width: 640px) {
+  * {
+    max-width: 100vw;
+    box-sizing: border-box;
+  }
+  [style*="position: absolute"] {
+    max-width: 100vw;
+  }
+  [style*="position: fixed"] {
+    max-width: 100vw;
+  }
+}
+
+/* ============================================================
+   VERY SMALL  ≤ 360px
+   ============================================================ */
+@media (max-width: 360px) {
+  h1 { font-size: 20px !important; }
+  .gallery-grid { grid-template-columns: 1fr !important; }
+}
+
+/* ============================================================
+   ULTIMATE OVERFLOW SAFETY — catch all edge cases
+   ============================================================ */
+[style*="position: absolute"],
+[style*="position:fixed"] {
+  max-width: 100vw;
+  box-sizing: border-box;
+}
+[style*="white-space: nowrap"] {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ensure images in flex/grid don't stretch beyond viewport */
+img, video, iframe {
+  max-width: 100% !important;
+  height: auto;
+}
+
+/* ============================================================
+   FLEX WRAP HELPERS
+   ============================================================ */
+@media (max-width: 640px) {
+  .flex-wrap-mobile { flex-direction: column !important; gap: 16px !important; }
+  .hidden-mobile    { display: none !important; }
+  .flex-wrap-mobile-footer { flex-direction: column !important; gap: 10px !important; text-align: center !important; }
+}
