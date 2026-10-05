@@ -366,7 +366,7 @@ export default function Contact({ setActivePage }) {
                   },
                   { label: 'Call / WhatsApp', detail: '+91 8399937999' },
                   { label: 'Email Address', detail: 'hello@saikrishnaphotography.com' },
-                  { label: 'Working Hours', detail: 'Tuesday - Sunday: 09:30 AM - 06:30 PM (Closed Mondays)' }
+                  { label: 'Working Hours', detail: 'Monday - Sunday: 08:00 AM - 10:00 PM ' }
                 ].map((item, idx) => (
                   <div key={idx} style={{ display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
 
