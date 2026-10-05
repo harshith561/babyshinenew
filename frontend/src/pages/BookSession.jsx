@@ -4,10 +4,10 @@ import { motion } from 'framer-motion';
 
 const scrollReveal = {
   hidden: { opacity: 0, y: 30 },
-  visible: { 
-    opacity: 1, 
+  visible: {
+    opacity: 1,
     y: 0,
-    transition: { duration: 0.8, ease: 'easeOut' } 
+    transition: { duration: 0.8, ease: 'easeOut' }
   }
 };
 
@@ -21,7 +21,7 @@ export default function BookSession() {
     dueDate: '',
     message: ''
   });
-  
+
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [errorMessage, setErrorMessage] = useState(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -75,7 +75,7 @@ export default function BookSession() {
   return (
     <div style={{ padding: '60px 24px', background: 'linear-gradient(180deg, #FFFDFB 0%, #fff 100%)' }}>
       <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
-        
+
         {/* Title */}
         <motion.div
           initial="hidden"
@@ -99,7 +99,7 @@ export default function BookSession() {
           gap: '40px',
           alignItems: 'start',
         }} className="md-grid-2">
-          
+
           {/* Booking Form Card */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -323,7 +323,7 @@ export default function BookSession() {
 
           {/* Contact Details & Google Maps */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '30px', textAlign: 'left' }}>
-            
+
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -353,7 +353,7 @@ export default function BookSession() {
                 <div style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
                   <div>
                     <h5 className="heading-sans" style={{ margin: '0 0 2px', fontSize: '15px' }}>Phone / WhatsApp</h5>
-                    <p style={{ margin: 0, fontSize: '13px', color: 'var(--text-muted)' }}>+91 99999 99999 / +91 88888 88888</p>
+                    <p style={{ margin: 0, fontSize: '13px', color: 'var(--text-muted)' }}>+91 8399937999</p>
                   </div>
                 </div>
 
@@ -367,7 +367,7 @@ export default function BookSession() {
                 <div style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
                   <div>
                     <h5 className="heading-sans" style={{ margin: '0 0 2px', fontSize: '15px' }}>Working Hours</h5>
-                    <p style={{ margin: 0, fontSize: '13px', color: 'var(--text-muted)' }}>Tuesday - Sunday: 9:30 AM - 6:30 PM (Mondays Closed)</p>
+                    <p style={{ margin: 0, fontSize: '13px', color: 'var(--text-muted)' }}>Monday - Sunday: 8:00 AM - 10:00 PM </p>
                   </div>
                 </div>
               </div>
@@ -399,10 +399,10 @@ export default function BookSession() {
               }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                   <span style={{ fontSize: '16px' }}>📍</span>
-                  <span style={{ fontSize: '13px', fontWeight: 700, color: 'var(--text-dark)' }}>Sai Krishna Photography Studio</span>
+                  <span style={{ fontSize: '13px', fontWeight: 700, color: 'var(--text-dark)' }}>Baby Shine Studio</span>
                 </div>
                 <a
-                  href="https://maps.google.com/?q=Sai+Krishna+Photography,+Ibrahimpatnam,+Vijayawada"
+                  href="https://maps.app.goo.gl/5GwEvwVU1YdjBxABA"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
@@ -420,8 +420,8 @@ export default function BookSession() {
                 </a>
               </div>
               <iframe
-                title="Sai Krishna Photography Location Map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3460.16327905889!2d80.52459739999999!3d16.5963842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35ec0cdc4d62af%3A0x411abb83e6e79c5b!2sSai%20Krishna%20Photography!5e1!3m2!1sen!2sin!4v1790104411752!5m2!1sen!2sin"
+                title="Baby Shine Studio Location Map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3823.6054704476524!2d80.5246658!3d16.596355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35edef41b7e4b1%3A0x585b2db53fadc4b3!2sBaby%20Shine%20Studio%20%7C%20Maternity%20%26%20Baby%20Photography!5e0!3m2!1sen!2sin!4v1791199477552!5m2!1sen!2sin"
                 width="100%"
                 height="280"
                 style={{ border: 0, display: 'block', width: '100%', minHeight: '280px' }}

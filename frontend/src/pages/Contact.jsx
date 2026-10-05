@@ -167,9 +167,9 @@ export default function Contact({ setActivePage }) {
 
       {/* ── MAIN CONTENT ── */}
       <div style={{ maxWidth: '1100px', margin: '0 auto', padding: '60px 24px 80px' }}>
-        
+
         <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '50px' }} className="md-grid-2">
-          
+
           {/* Left Column: Premium Booking Form */}
           <motion.div
             initial={{ opacity: 0, x: -35 }}
@@ -194,7 +194,7 @@ export default function Contact({ setActivePage }) {
 
             <AnimatePresence mode="wait">
               {!formSubmitted ? (
-                <motion.form 
+                <motion.form
                   key="contact-form"
                   onSubmit={handleSubmit}
                   initial={{ opacity: 0 }}
@@ -203,8 +203,8 @@ export default function Contact({ setActivePage }) {
                 >
                   {/* Name field */}
                   <div className="input-group">
-                    <input 
-                      type="text" 
+                    <input
+                      type="text"
                       name="name"
                       placeholder=" "
                       required
@@ -216,8 +216,8 @@ export default function Contact({ setActivePage }) {
 
                   {/* Phone field */}
                   <div className="input-group">
-                    <input 
-                      type="tel" 
+                    <input
+                      type="tel"
                       name="phone"
                       placeholder=" "
                       required
@@ -229,8 +229,8 @@ export default function Contact({ setActivePage }) {
 
                   {/* Baby's expected age / due date */}
                   <div className="input-group">
-                    <input 
-                      type="text" 
+                    <input
+                      type="text"
                       name="babyAge"
                       placeholder=" "
                       value={formData.babyAge}
@@ -241,7 +241,7 @@ export default function Contact({ setActivePage }) {
 
                   {/* Category of Shoot */}
                   <div className="input-group select-group">
-                    <select 
+                    <select
                       name="category"
                       required
                       value={formData.category}
@@ -259,7 +259,7 @@ export default function Contact({ setActivePage }) {
 
                   {/* Message */}
                   <div className="input-group">
-                    <textarea 
+                    <textarea
                       name="message"
                       rows="4"
                       placeholder=" "
@@ -313,7 +313,7 @@ export default function Contact({ setActivePage }) {
                   </button>
                 </motion.form>
               ) : (
-                <motion.div 
+                <motion.div
                   key="success-message"
                   initial={{ opacity: 0, scale: 0.95 }}
                   animate={{ opacity: 1, scale: 1 }}
@@ -364,7 +364,7 @@ export default function Contact({ setActivePage }) {
                     label: 'Our Location',
                     detail: 'A.Colony Center, Brilliants Convent Street, Ibrahimpatnam, Vijayawada, Gudurupadu, Andhra Pradesh — 521456'
                   },
-                  { label: 'Call / WhatsApp', detail: '+91 99999 99999 / +91 88888 88888' },
+                  { label: 'Call / WhatsApp', detail: '+91 8399937999' },
                   { label: 'Email Address', detail: 'hello@saikrishnaphotography.com' },
                   { label: 'Working Hours', detail: 'Tuesday - Sunday: 09:30 AM - 06:30 PM (Closed Mondays)' }
                 ].map((item, idx) => (
@@ -390,7 +390,7 @@ export default function Contact({ setActivePage }) {
               position: 'relative'
             }}>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3460.16327905889!2d80.52459739999999!3d16.5963842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35ec0cdc4d62af%3A0x411abb83e6e79c5b!2sSai%20Krishna%20Photography!5e1!3m2!1sen!2sin!4v1790104411752!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3823.6054704476524!2d80.5246658!3d16.596355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35edef41b7e4b1%3A0x585b2db53fadc4b3!2sBaby%20Shine%20Studio%20%7C%20Maternity%20%26%20Baby%20Photography!5e0!3m2!1sen!2sin!4v1791199477552!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0, minHeight: '300px' }}

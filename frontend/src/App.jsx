@@ -128,7 +128,7 @@ export default function App() {
       testimonials: "Read reviews from parents who trusted Baby Shine Studio for newborn, milestone, and family photography in Vijayawada.",
       book: "Schedule a session with Baby Shine Studio, Vijayawada's trusted newborn and milestone photographer."
     };
-    
+
     let metaDesc = document.querySelector('meta[name="description"]');
     if (!metaDesc) {
       metaDesc = document.createElement('meta');
@@ -177,7 +177,7 @@ export default function App() {
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', position: 'relative' }}>
-      
+
       {/* Background Floating Elements */}
       <FloatingParticles />
 
@@ -218,7 +218,7 @@ export default function App() {
           marginBottom: '40px',
           textAlign: 'left'
         }} className="footer-grid">
-          
+
           {/* Col 1: Branding & Trust */}
           <div>
             <h3 className="heading-serif" style={{ color: '#fff', fontSize: '24px', margin: '0 0 12px' }}>Baby Shine Studio</h3>
@@ -282,7 +282,7 @@ export default function App() {
                 <strong>Location:</strong> A.Colony Center, Brilliants Convent Street, Ibrahimpatnam, Vijayawada, Gudurupadu, Andhra Pradesh — 521456
               </p>
               <p style={{ margin: 0 }}>
-                <strong>Phone:</strong> +91 99999 99999 / +91 88888 88888
+                <strong>Phone:</strong> +91 8399937999
               </p>
               <p style={{ margin: 0 }}>
                 <strong>Email:</strong> hello@babyshine.com

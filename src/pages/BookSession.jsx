@@ -4,10 +4,10 @@ import { motion } from 'framer-motion';
 
 const scrollReveal = {
   hidden: { opacity: 0, y: 30 },
-  visible: { 
-    opacity: 1, 
+  visible: {
+    opacity: 1,
     y: 0,
-    transition: { duration: 0.8, ease: 'easeOut' } 
+    transition: { duration: 0.8, ease: 'easeOut' }
   }
 };
 
@@ -21,7 +21,7 @@ export default function BookSession() {
     dueDate: '',
     message: ''
   });
-  
+
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleSubmit = (e) => {
@@ -36,7 +36,7 @@ export default function BookSession() {
   return (
     <div style={{ padding: '60px 24px', background: 'linear-gradient(180deg, #FFFDFB 0%, #fff 100%)' }}>
       <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
-        
+
         {/* Title */}
         <motion.div
           initial="hidden"
@@ -60,7 +60,7 @@ export default function BookSession() {
           gap: '40px',
           alignItems: 'start',
         }} className="md-grid-2">
-          
+
           {/* Booking Form Card */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -270,7 +270,7 @@ export default function BookSession() {
 
           {/* Contact Details & Google Maps */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '30px', textAlign: 'left' }}>
-            
+
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -301,7 +301,7 @@ export default function BookSession() {
 
                   <div>
                     <h5 className="heading-sans" style={{ margin: '0 0 2px', fontSize: '15px' }}>Phone / WhatsApp</h5>
-                    <p style={{ margin: 0, fontSize: '13px', color: 'var(--text-muted)' }}>+91 99999 99999 / +91 88888 88888</p>
+                    <p style={{ margin: 0, fontSize: '13px', color: 'var(--text-muted)' }}>+91 8399937999</p>
                   </div>
                 </div>
 
@@ -317,7 +317,7 @@ export default function BookSession() {
 
                   <div>
                     <h5 className="heading-sans" style={{ margin: '0 0 2px', fontSize: '15px' }}>Working Hours</h5>
-                    <p style={{ margin: 0, fontSize: '13px', color: 'var(--text-muted)' }}>Tuesday - Sunday: 9:30 AM - 6:30 PM (Mondays Closed)</p>
+                    <p style={{ margin: 0, fontSize: '13px', color: 'var(--text-muted)' }}>Monday - Sunday: 8:00 AM - 10:00 PM</p>
                   </div>
                 </div>
               </div>
