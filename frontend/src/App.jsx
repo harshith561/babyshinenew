@@ -103,30 +103,34 @@ export default function App() {
 
     // 2. Set dynamic meta titles and descriptions for SEO keywords in Vijayawada
     const titleMap = {
-      home: "Baby Shine Studio | Best Baby & Newborn Photographer Vijayawada",
-      about: "About Baby Shine Studio | Where Precious Memories Become Timeless Keepsakes",
+      home: "Newborn & Baby Photography in Vijayawada | Baby Shine Studio",
+      about: "About Baby Shine Studio | Baby Photography in Vijayawada",
       services: "Baby Photography Services in Vijayawada | Baby Shine Studio",
-      newborn: "Newborn Photography in Vijayawada | Safe & Timeless Baby Portraits",
+      newborn: "Newborn Photography & Photographer in Vijayawada | Baby Shine",
       milestone: "Baby Milestone Photography in Vijayawada | Baby Shine Studio",
-      cakesmash: "Cake Smash Photoshoot in Vijayawada | Baby Shine Studio",
+      cakesmash: "Cake Smash Photography & Photoshoots | Baby Shine Studio",
       gallery: "Baby Photography Gallery in Vijayawada | Baby Shine Studio",
       packages: "Baby Photoshoot Packages in Vijayawada | Newborn to First Birthday",
       testimonials: "Parent Reviews | Trusted Newborn Photography Studio Vijayawada",
-      book: "Book Your Session | Baby Photography Studio Vijayawada"
+      book: "Book a Baby Photoshoot in Vijayawada | Baby Shine Studio",
+      blog: "Baby Photography Tips & Ideas | Baby Shine Studio Blog",
+      contact: "Contact Baby Shine Studio | Vijayawada Baby Photographer"
     };
     document.title = titleMap[activePage] || "Baby Shine Studio Vijayawada";
 
     const descMap = {
-      home: "Baby Shine Studio - Best Newborn & Baby Photography Studio in Vijayawada. Specialized in safe baby photoshoot, 1 month baby shoot packages, and creative themes.",
-      about: "Baby Shine Studio was created to provide families with a warm, welcoming space where life's most precious moments can be beautifully preserved. Powered by Sai Krishna Photography.",
+      home: "Capture your little one's precious moments with professional newborn and baby photography in Vijayawada. Explore creative photoshoots at Baby Shine Studio.",
+      about: "Get to know Baby Shine Studio, a photography studio dedicated to capturing beautiful newborn, baby and milestone moments in Vijayawada.",
       services: "Explore our premium baby photography services in Vijayawada. From safe newborn photography to milestone shoots, cake smash sessions, kids photography, and cinematic videos.",
-      newborn: "Celebrate your baby's first days with professional newborn photography in Vijayawada. Safe, comfortable sessions designed to capture every tiny detail and precious memory beautifully.",
-      milestone: "Capture your baby's growth milestones from sitting to crawling in our comfortable, sanitised Vijayawada studio.",
-      cakesmash: "Celebrate your child's first birthday with a fun, messy cake smash photoshoot in Vijayawada. Custom themes and packages.",
+      newborn: "Preserve your baby's earliest moments with professional newborn photography in Vijayawada. Explore beautiful newborn photoshoots by Baby Shine Studio.",
+      milestone: "Celebrate every precious milestone with creative baby photography and photoshoots in Vijayawada. Capture your little one's journey with Baby Shine Studio.",
+      cakesmash: "Make your little one's birthday unforgettable with a fun cake smash photoshoot. Explore creative cake smash photography by Baby Shine Studio.",
       gallery: "Explore our baby photography gallery featuring newborn portraits, milestone sessions, cake smash celebrations, first birthdays, and family photography captured with love and creativity.",
       packages: "Explore flexible baby photoshoot packages in Vijayawada for newborns, milestone sessions, cake smash photography, birthdays, and family portraits tailored to your family's needs.",
       testimonials: "Read reviews from parents who trusted Baby Shine Studio for newborn, milestone, and family photography in Vijayawada.",
-      book: "Schedule a session with Baby Shine Studio, Vijayawada's trusted newborn and milestone photographer."
+      book: "Ready to capture your little one's special moments? Book a newborn, baby, milestone or cake smash photoshoot with Baby Shine Studio in Vijayawada.",
+      blog: "Explore baby photography tips, newborn photoshoot ideas, milestone inspiration and helpful guides from Baby Shine Studio.",
+      contact: "Get in touch with Baby Shine Studio for newborn, baby, milestone and cake smash photography in Vijayawada. Contact us to discuss your photoshoot."
     };
 
     let metaDesc = document.querySelector('meta[name="description"]');
