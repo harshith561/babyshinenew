@@ -1035,13 +1035,13 @@ export default function Home({ setActivePage }) {
                 <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
               </svg>
               <span className="heading-sans" style={{ fontSize: '20px', fontWeight: 700, color: 'var(--text-dark)' }}>
-                @saisbabyphotography
+                @babyshine_studio
               </span>
             </div>
 
             {/* Right: Follow Button */}
             <a
-              href="https://www.instagram.com/saisbabyphotography/"
+              href="https://www.instagram.com/babyshine_studio?stkn=MTZkZTk5eWpjcm1uYw%3D%3D&utm_source=qr"
               target="_blank"
               rel="noopener noreferrer"
               style={{

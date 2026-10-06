@@ -87,7 +87,7 @@ export default function App() {
       ],
       "sameAs": [
         "https://www.facebook.com/saikrishnaphotography",
-        "https://www.instagram.com/saikrishnaphotography"
+        "https://www.instagram.com/babyshine_studio?stkn=MTZkZTk5eWpjcm1uYw%3D%3D&utm_source=qr"
       ]
     };
 

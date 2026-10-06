@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 
-const INSTAGRAM_URL = 'https://www.instagram.com/photographyby_sai_krishna/';
+const INSTAGRAM_URL = 'https://www.instagram.com/babyshine_studio?stkn=MTZkZTk5eWpjcm1uYw%3D%3D&utm_source=qr';
 
 const reels = [
   { id: 1, src: '/reels/reel1.mp4', label: 'Reel 1', tag: 'Newborn Story' },

@@ -1025,7 +1025,7 @@ export default function Home({ setActivePage }) {
               </div>
               <div>
                 <div className="heading-sans" style={{ fontSize: '18px', fontWeight: 700, color: 'var(--text-dark)', lineHeight: 1.1 }}>
-                  @photographyby_sai_krishna
+                  @babyshine_studio
                 </div>
                 <div style={{ fontSize: '12px', color: 'var(--text-muted)', marginTop: '2px' }}>Behind the Scenes &middot; Short Reels &middot; Studio Life</div>
               </div>
@@ -1033,7 +1033,7 @@ export default function Home({ setActivePage }) {
 
             {/* Right: Follow Button */}
             <a
-              href="https://www.instagram.com/photographyby_sai_krishna/"
+              href="https://www.instagram.com/babyshine_studio?stkn=MTZkZTk5eWpjcm1uYw%3D%3D&utm_source=qr"
               target="_blank"
               rel="noopener noreferrer"
               style={{
@@ -1129,7 +1129,7 @@ export default function Home({ setActivePage }) {
                       letterSpacing: '0.5px', textShadow: '0 1px 4px rgba(0,0,0,0.4)'
                     }}>{reel.label}</span>
                     <a
-                      href="https://www.instagram.com/photographyby_sai_krishna/"
+                      href="https://www.instagram.com/babyshine_studio?stkn=MTZkZTk5eWpjcm1uYw%3D%3D&utm_source=qr"
                       target="_blank"
                       rel="noopener noreferrer"
                       onClick={(e) => e.stopPropagation()}
@@ -1162,7 +1162,7 @@ export default function Home({ setActivePage }) {
               ❤️ Enjoying our content? Follow us for daily updates from the studio!
             </p>
             <a
-              href="https://www.instagram.com/photographyby_sai_krishna/"
+              href="https://www.instagram.com/babyshine_studio?stkn=MTZkZTk5eWpjcm1uYw%3D%3D&utm_source=qr"
               target="_blank"
               rel="noopener noreferrer"
               style={{
