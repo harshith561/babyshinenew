@@ -315,7 +315,16 @@ export default function App() {
             © 2026 Baby Shine Studio. All Rights Reserved.
           </p>
           <p style={{ margin: 0 }}>
-            Designed & Developed for Premium Baby Photography Vijayawada.
+            -Powered by <a
+              href="https://digitalverto.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: 'inherit', textDecoration: 'none', transition: 'color 0.2s' }}
+              onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--primary-pink)')}
+              onMouseLeave={(e) => (e.currentTarget.style.color = 'inherit')}
+            >
+              Digital Verto
+            </a>
           </p>
         </div>
       </footer>
