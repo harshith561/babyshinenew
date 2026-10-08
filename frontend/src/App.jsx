@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Navbar from './components/Navbar';
 import FloatingParticles from './components/FloatingParticles';
+import FloatingActions from './components/FloatingActions';
 
 
 // Import Pages
@@ -229,16 +230,22 @@ export default function App() {
             <p style={{ fontSize: '14px', lineHeight: 1.6, color: '#C8BEB5', marginBottom: '20px' }}>
               Specialized newborn and baby photography studio in Vijayawada capturing tiny smiles and precious beginnings with absolute safety and luxury backdrops.
             </p>
-            <div style={{
-              backgroundColor: 'rgba(255, 255, 255, 0.05)',
-              border: '1px solid rgba(222, 93, 131, 0.2)',
-              borderRadius: '12px',
-              padding: '12px 16px',
-              fontSize: '12px',
-              color: '#FFD5E5'
-            }}>
-              Powered by <strong>Sai Krishna Photography</strong> — 30 Years of Trusted Photography Excellence in Andhra Pradesh.
-            </div>
+            <a
+              href="https://saikrishnaphography.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Visit Sai Krishna Photography website"
+              className="flex w-fit max-w-full flex-col items-start gap-4 rounded-xl border border-[#DE5D83]/20 bg-white/5 p-4! text-xs text-[#FFD5E5] no-underline transition-colors duration-200 hover:border-[#DE5D83]/60 hover:bg-white/[0.08] lg:flex-row lg:items-center lg:gap-5"
+            >
+              <img
+                src="/logos/saikrishna.webp"
+                alt="Sai Krishna Photography logo"
+                className="h-16! w-16! max-w-none! shrink-0 rounded-lg object-contain"
+              />
+              <span className="leading-relaxed">
+                A Division of <strong>Sai Krishna Photography</strong> — 30 Years of Trusted Photography Excellence in Andhra Pradesh.
+              </span>
+            </a>
           </div>
 
           {/* Col 2: Services / Pages */}
@@ -328,6 +335,7 @@ export default function App() {
           </p>
         </div>
       </footer>
+      <FloatingActions />
 
 
     </div>
