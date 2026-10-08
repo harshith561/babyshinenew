@@ -231,7 +231,7 @@ export default function App() {
               Specialized newborn and baby photography studio in Vijayawada capturing tiny smiles and precious beginnings with absolute safety and luxury backdrops.
             </p>
             <a
-              href="https://saikrishnaphography.vercel.app"
+              href="https://saikrishnaphotography.com/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Visit Sai Krishna Photography website"
