@@ -226,7 +226,33 @@ export default function App() {
 
           {/* Col 1: Branding & Trust */}
           <div>
-            <h3 className="heading-serif" style={{ color: '#fff', fontSize: '24px', margin: '0 0 12px' }}>Baby Shine Studio</h3>
+            <div
+              onClick={() => navigateTo('home')}
+              style={{
+                width: 'clamp(180px, 60vw, 240px)',
+                height: '84px',
+                borderRadius: '14px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                overflow: 'hidden',
+                cursor: 'pointer',
+                marginBottom: '16px',
+              }}
+            >
+              <img
+                src="/logos/babyshinelogo.png"
+                alt="Baby Shine Studio logo"
+                style={{
+                  width: '100%',
+                  height: 'auto',
+                  maxWidth: 'none',
+                  flexShrink: 0,
+                  display: 'block',
+                  marginTop: '15%',   // same nudge as the navbar; adjust until centered
+                }}
+              />
+            </div>
             <p style={{ fontSize: '14px', lineHeight: 1.6, color: '#C8BEB5', marginBottom: '20px' }}>
               Specialized newborn and baby photography studio in Vijayawada capturing tiny smiles and precious beginnings with absolute safety and luxury backdrops.
             </p>

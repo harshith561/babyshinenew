@@ -19,7 +19,7 @@ const menuItems = [
 ];
 
 export default function Navbar({ activePage, setActivePage }) {
-  const [isOpen,     setIsOpen]     = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const drawerRef = useRef(null);
   const toggleBtnRef = useRef(null);
@@ -94,18 +94,31 @@ export default function Navbar({ activePage, setActivePage }) {
         }}>
 
           {/* Brand Logo */}
-          <div onClick={() => navigate('home')} style={{ display: 'flex', alignItems: 'center', gap: '8px', cursor: 'pointer', flexShrink: 0 }}>
-
-            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', lineHeight: 1 }}>
-              <span className="heading-serif" style={{ fontSize: 'clamp(16px, 3vw, 22px)', color: 'var(--text-dark)', letterSpacing: '-0.5px' }}>
-                Baby Shine
-              </span>
-              <span className="heading-sans" style={{ fontSize: '9px', color: 'var(--primary-pink)', letterSpacing: '2px', textTransform: 'uppercase' }}>
-                STUDIO
-              </span>
-            </div>
+          {/* Brand Logo */}
+          <div
+            onClick={() => navigate('home')}
+            style={{
+              height: '56px',
+              width: 'clamp(160px, 24vw, 230px)',
+              display: 'flex',
+              alignItems: 'center',      // centers the taller image vertically
+              cursor: 'pointer',
+              flexShrink: 0,
+            }}
+          >
+            <img
+              src="/logos/babyshinelogo.png"
+              alt="Baby Shine Studio logo"
+              style={{
+                width: '100%',
+                height: 'auto',          // natural height, no cropping
+                maxWidth: 'none',
+                flexShrink: 0,
+                display: 'block',
+                marginTop: '15%',
+              }}
+            />
           </div>
-
           {/* Desktop Nav */}
           <nav style={{ display: 'none' }} className="lg-flex-nav">
             <ul style={{ display: 'flex', listStyle: 'none', margin: 0, padding: 0, gap: '20px', alignItems: 'center' }}>
